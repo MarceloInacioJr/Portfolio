@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- header -->
+        <header id="header">
+            <div class="title">
+                <h1>Olá, eu sou o Marcelo, seja bem-vindo(a)!</h1>
+                <div class="btn-animation">
+                <div class="pulse"></div>
+                <input type="submit" class="btn" onclick="toMoveCover()" value="Sobre mim">
+                </div>
+                <a href="#main"><img src="img/header/down-arrow.svg" alt="flecha para baixo"></a>
+            </div>
+
+            <div class="about-me">
+                <h1 id="about-title">Sobre mim</h1>
+                <div id="img-profile">
+                    <img src="/img/header/profile.jpg" alt="perfil">
+                </div>
+                <p id="name-profile">Marcelo Inácio</p>
+                <p id="description-profile">Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Fatec RP,
+                    e estou focado em
+                    aprimorar meus conhecimentos na área de desenvolvimento. Possuo conhecimento em HTML, CSS,
+                    Javascript e SQL, e estou constantemente buscando novas tecnologias e tendências do mercado.</p>
+
+                <input type="submit" class="btn" onclick="toMoveCover()" value="Voltar">
+            </div>
+            <div class="image-cover toMoveCover"></div>
+        </header>
+
+        <!-- main -->
+        <main id="main">
+            <div class="certification-main">
+                <h1 id="certification-title">Certificados</h1>
+                <div class="certification-content">
+                    <div id="etec">
+                        <img src="img/main/certification/img-etec.jpg" class="certification-image" alt="logotipo etec">
+                        <p class="description-certification">
+                            Formado em 2019 pela Etec José Martimiano no curso Técnico em informática para
+                            desenvolvimento de softwares.
+                        </p>
+                    </div>
+
+                    <div id="oracle">
+                        <img src="img/main/certification/img-oracle.png" class="certification-image"
+                            alt="logotipo oracle">
+                        <p class="description-certification">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard.
+                        </p>
+                    </div>
+
+                    <div id="rocketseat">
+                        <img src="img/main/certification/img-rocketseat.jpg" class="certification-image"
+                            alt="logotipo rocketseat">
+                        <p class="description-certification">
+                            Curso de 26 horas da Rocketseat que inclui aprendizado em HTML, CSS, Javascript, NodeJS e
+                            SQL.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-main">
+                <h1 id="project-title">Projetos</h1>
+                <div class="project-content">
+                    <div class="project">
+                        <img src="img/main/projects/img_breve.jpg" alt="projeto imagem">
+                        <p class="project-name">Nome projeto</p>
+                    </div>
+                    <div class="project">
+                        <img src="img/main/projects/img_breve.jpg" alt="projeto imagem">
+                        <p class="project-name">Nome projeto</p>
+                    </div>
+                    <div class="project">
+                        <img src="img/main/projects/img_breve.jpg" alt="projeto imagem">
+                        <p class="project-name">Nome projeto</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <h1 id="title-footer">Contatos</h1>
+            <div class="contact-content">
+                <div id="whatsapp">
+                    <img src="img/footer/img-whatsapp.png" alt="logo whatsapp">
+                    <a href="https://wa.me/5516991289576"><p class="legend-contact">(16) 99128-9576</p></a>
+                </div>
+                <div id="email">
+                    <img src="img/footer/img-email.png" alt="logo email">
+                    <a href="mailto:marceloinacio2121@gmail.com"><p class="legend-contact">marceloinacio2121@gmail.com</p></a>
+                </div>
+                <div id="github">
+                    <img src="img/footer/img-github.png" alt="logo github">
+                    <a class="a" href="https://github.com/MarceloInacioJr"><p class="legend-contact">github.com/MarceloInacioJr</p></a>
+                </div>
+                <div id="linkedin">
+                    <img src="img/footer/img-linkedin.png" alt="logo linkedin">
+                    <a href="https://www.linkedin.com/in/marcelo-in%C3%A1cio-49697311b/"><p class="legend-contact">Marcelo Inácio</p></a>
+                </div>
+            </div>
+            <div id="line"></div>
+            <h1 id="legend">Desenvolvido por Marcelo Inácio</h1>
+        </footer>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
