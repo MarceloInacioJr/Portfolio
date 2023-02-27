@@ -1,3 +1,8 @@
+/* variaveis */
+:root{
+    --fonts:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 html{ 
     scroll-behavior:smooth;
@@ -23,6 +28,7 @@ body::-webkit-scrollbar{
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
+    font-family: var(--fonts);
 
 }
 
@@ -31,7 +37,6 @@ body::-webkit-scrollbar{
 #header{
     height: 100vh;
     width: 100vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction:row;
 }
@@ -56,6 +61,7 @@ body::-webkit-scrollbar{
 
 /* btn about-me */
 .btn{
+    position: relative;
     height: 40px;
     width: 100px;
     border-radius: 5px;
@@ -77,36 +83,32 @@ body::-webkit-scrollbar{
 /* animation btn */
 
 .pulse{
-    margin-left: -.4%;
-    margin-top: -.4%;
+    margin-top: -4px;
+    margin-left: -5px;
     position: absolute;
-    height: 50px;  
-    width: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 45px;  
+    width: 106px;
     border-radius: 5px;
-    border: 2px solid rgb(231, 0, 0);
+    border: 2px solid black;
+    opacity: .5;
+    animation: animation-pulse 2.2s linear infinite ;
 }
-
-.pulse:before, .pulse::after{
-   
-   
-}
-
-
 
 
 @keyframes animation-pulse{
     0%{
-        transform: scale(0.5);
-        opacity: 0;
-        
+        transform: scale(0.1);
+        opacity: .2;
       }
 
-    50%{}
+    50%{
+        opacity: 1;
+    }
 
-    100%{}
+    100%{ 
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 
 /* img-down-arrow */
@@ -266,6 +268,8 @@ body::-webkit-scrollbar{
     width: 150px;
     border: 1px solid gray;
     border-radius: 10px;
+    cursor: pointer;
+    
 }
 
 /* project */
@@ -273,6 +277,8 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+    
 }
 
 .project-name{
@@ -349,20 +355,4 @@ body::-webkit-scrollbar{
 .contact-content img{
     height: 30px;
     width: 30px;
-}
-
-/* line */
-#line{
-    margin-top: 1%;
-    height: 1px;
-    width: 95%;
-    border-top: 1px solid gray ;
-}
-
-#legend{
-    margin-top: 15px;
-    font-size:18px ;
-    color: white;
-    margin-bottom: 20px;
-
 }
